@@ -1,12 +1,13 @@
+/* head elemts here */
+
 * {
     text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    cursor:crosshair;
+    font-family: 'Shadows Into Light', cursive;
 }
-
 
 
 nav {
@@ -15,7 +16,7 @@ nav {
   background: rgb(48, 53, 112);
   position: fixed;
   overflow-y: hidden;
-  z-index: 1;
+  z-index: 2;
   top: 0;
 }
 
@@ -38,9 +39,9 @@ nav li {
     margin: 0 8px;
     line-height: 80px;
 }
+
 html {
  scroll-behavior: smooth;
-
 }
 
 nav a {
@@ -54,34 +55,25 @@ nav a {
 }
 
  a:hover {
-    border: 1px solid rgb(43, 69, 133);
     transition: 0.5s;
+    color: rgb(197, 197, 255);
 }
 
-
-img {
-    transform: rotate(180deg);
-
-}
-
-#bunny {
-    float: right;
-    position: fixed;
-    top: 40px;
+#ragdoll {
+    height: 300px;
+    width: 400px;
+    margin-top: 10px;
 }
 
 #kitty {
-    position: fixed;
-    margin-left: 1200px;
-    top: 30px;
+    float: right;
+    position: absolute;
+    top: 32px;
+    z-index: 1;
+    transform: rotate(180deg);
 }
 
 
-#thanks {
-  text-align: center;
-  margin-top: 350px;
-  color: white;
-}
 
 #about {
     height: 750px;
@@ -89,39 +81,90 @@ img {
     background-color: rgb(60, 60, 99);
 }
 
+/* body elemts down here */
 
-.front-text {
-  height: 750px;
-  background-image: url('dogy.jpg');
+.background {
+  background-image: url('/images/gatp.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  opacity: 0.75;
 }
 
-.mine {
-  margin-top: 200px;
-}
-
-#about-web {
+.background {
   color: white;
-  font-weight: bold;
-  font-size: 35px;
-  margin-bottom: 20px;
-  text-align: center;
+  font-size: 200px;
+  display: grid;
+  place-items: center;
+  align-content: center;
 }
 
-.first {
-  background-color: rgb(74, 75, 135);
-  height: 450px;
+#breeds {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 110vh;
+  background-color: rgb(28, 28, 102);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ #act {
+ margin: 20px;
+ width: 80%;
+ }
+
+
+#breed {
+  margin-top:100px;
+}
+
+.cat-breeds , p {
   width: 400px;
+}
+
+img {
   border-radius: 0.2cm;
-  margin-left: 30px;
+  
 }
 
-.first h1 {
-  text-align: center;
+#tips {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 90vh;
+  background-color: rgb(49, 49, 165);
   color: white;
-  font-weight: bold;
-  margin: 20px;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.first p {
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#know {
+  margin-bottom: 10px;
+}
+
+#row {
   margin: 10px;
 }
+
+ b {
+  color: rgb(135, 148, 248);
+ }
