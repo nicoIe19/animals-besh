@@ -84,7 +84,7 @@ nav a {
 /* body elemts down here */
 
 .background {
-  background-image: url('/images/gatp.jpg');
+  background-image: url('images/gatp.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
