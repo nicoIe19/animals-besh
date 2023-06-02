@@ -175,20 +175,33 @@ img {
 
  /* tips are heere */
  
-#only-tips {
+ #only-tips {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+}
+.tips{
+  max-width: 100%;
+  height: auto;
+}
+@media(max-width:600px){
+  #only-tip{
+    grid-template-columns: repeat(auto-fit, min250px,2fr);}
+}
+/* #only-tips {
   min-height: 75vh;
   background-color: rgb(97, 97, 246);
   color: white;
   text-align: center;
   margin-top: 10px;
-}
+  display: flex;
+} */
 
-.tips {
+/* .tips {
   display:table;
   float: left;
   width: 33.33%;
   margin-top: 40px;
-}
+} */
  /* expirment with media work!!! */
 
  @media all and (min-width: 150px) and (max-width: 1000px) {
