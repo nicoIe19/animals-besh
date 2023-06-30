@@ -70,6 +70,8 @@ nav a {
     top: 32px;
     z-index: 1;
     transform: rotate(180deg);
+    height: 150px;
+    width: 150px;
 }
 
 
@@ -153,17 +155,17 @@ img {
 }
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 #know {
   margin-bottom: 10px;
 }
 
-#row {
+img {
   margin: 10px;
   
 }
@@ -174,6 +176,11 @@ img {
 
  .column > p {
   margin: 20px;
+ }
+
+ .column > img {
+  height: 300px;
+  width: 400px;
  }
 
 /* my expierencencencencencencencencence */
@@ -200,6 +207,10 @@ img {
   
 }
  
+.my > img {
+  width: 400px;
+  height: 400px;
+}
 
  /* expirment with media work!!! */
 
